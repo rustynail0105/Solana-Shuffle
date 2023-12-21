@@ -1,0 +1,14 @@
+.profile-avatar {
+  .image-out {
+    /* Standard mask-border syntax */
+    mask-border: url(./assets/crop-out.svg);
+    /* Fallback for WebKit */
+    -webkit-mask-box-image: url(./assets/crop-out.svg);
+  }
+  .image-inner {
+    /* Standard mask-border syntax */
+    mask-border: url(./assets/crop-inner.svg);
+    /* Fallback for WebKit */
+    -webkit-mask-box-image: url(./assets/crop-inner.svg);
+  }
+}

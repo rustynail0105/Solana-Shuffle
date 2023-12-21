@@ -1,0 +1,32 @@
+.swiper-slide {
+  width: 100% !important;
+}
+
+@media (max-width: 896px) {
+  .swiper-pagination {
+    position: absolute !important;
+    top: 220px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination {
+    position: absolute !important;
+    top: 335px !important;
+  }
+}
+
+@media (min-width: 896px) {
+  .swiper-pagination {
+    position: relative !important;
+    margin-top: 10px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}

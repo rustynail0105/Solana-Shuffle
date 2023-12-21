@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik+Puddles:regular,bold,italic&subset=latin,latin-ext");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  overscroll-behavior-y: none;
+}
+
+@media only screen and (min-device-width: 736px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    -webkit-overflow-scrolling: auto;
+    width: 5px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* mode button tooltip */
+
+.clip-bottom {
+  clip-path: polygon(100% 50%, 0 0, 100% 0, 50% 100%, 0 0);
+}

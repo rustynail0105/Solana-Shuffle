@@ -1,0 +1,147 @@
+.not-revealed {
+	background: radial-gradient(
+			132.75% 155.27% at 31.94% -11.82%,
+			#424282 2.08%,
+			#3a2a68 54.17%,
+			#30216c 91.62%
+		),
+		linear-gradient(180deg, rgb(87, 84, 152), rgb(59, 46, 114));
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	box-shadow: 0px 3px 0px #22174b, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.skull-not-clicked {
+	position: relative;
+	background: radial-gradient(
+			132.75% 155.27% at 31.94% -11.82%,
+			#4a3871 2.08%,
+			#3c2c60 54.17%,
+			#24234f 91.62%
+		),
+		linear-gradient(180deg, rgb(163, 100, 130, 1), rgb(252, 108, 118));
+
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	box-shadow: 0px 3px 0px #b92b5e, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.skull-not-clicked::before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	border-radius: inherit;
+	background: linear-gradient(
+		0deg,
+		#fa5e69 13.02%,
+		rgba(250, 94, 105, 0.105634) 82.29%,
+		rgba(250, 94, 105, 0) 86.98%
+	);
+	opacity: 0.6;
+}
+
+.pill-not-clicked {
+	position: relative;
+	background: radial-gradient(
+			132.75% 155.27% at 31.94% -11.82%,
+			#3f3f95 2.08%,
+			#34316d 54.17%,
+			#2a295a 91.62%
+		),
+		linear-gradient(180deg, rgb(200, 98, 243, 1), rgb(32, 159, 254));
+
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	box-shadow: 0px 3px 0px #0043a7, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.pill-not-clicked::before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	border-radius: inherit;
+	background: linear-gradient(
+		0deg,
+		#209eff 13.02%,
+		rgba(209, 97, 243, 0.5) 53.75%,
+		rgba(209, 97, 243, 0) 86.98%
+	);
+	opacity: 0.4;
+}
+
+.skull-clicked {
+	position: relative;
+	background: radial-gradient(
+			132.75% 155.27% at 31.94% -11.82%,
+			#ffacb4 0%,
+			#ff6376 42.19%,
+			#e72c86 91.62%
+		),
+		linear-gradient(180deg, rgb(254, 175, 186, 1), rgb(231, 44, 134));
+
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	box-shadow: 0px 3px 0px #b92b5e, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.pill-clicked {
+	position: relative;
+	background: radial-gradient(
+			105.26% 125.57% at 31.94% -11.82%,
+			#e053f0 2.08%,
+			#ab82f9 50.98%,
+			#209eff 91.62%
+		),
+		linear-gradient(180deg, rgb(229, 165, 250, 1), rgb(42, 155, 255));
+
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	box-shadow: 0px 3px 0px #0043a7, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.active {
+	position: relative;
+	background: radial-gradient(
+			132.75% 155.27% at 31.94% -11.82%,
+			#525297 2.08%,
+			#483580 54.17%,
+			#412e8e 91.62%
+		),
+		linear-gradient(180deg, rgb(112, 108, 185), rgb(78, 61, 141));
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	border: double 2px transparent;
+	/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+	box-shadow: 0px 3px 0px #2e1c72, 0px 15.364px 25.6067px rgba(0, 0, 0, 0.09);
+}
+
+.active:hover {
+	transform: translateY(-1px);
+}
+.active:active {
+	transform: translateY(1px);
+}
+
+.active::before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	border-radius: inherit;
+	background: white;
+	opacity: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.active:hover::before {
+	opacity: 0.05;
+}

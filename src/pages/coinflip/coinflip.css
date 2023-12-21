@@ -1,0 +1,25 @@
+@keyframes bounce1 {
+	0%,
+	100% {
+		filter: drop-shadow(0px 0px 20px rgba(140, 97, 255, 0.7));
+	}
+	50% {
+		filter: drop-shadow(0px 0px 20px transparent);
+	}
+}
+.animate-bounce1 {
+	animation: bounce1 1s infinite;
+}
+
+@keyframes bounce2 {
+	0%,
+	100% {
+		filter: drop-shadow(0px 0px 20px transparent);
+	}
+	50% {
+		filter: drop-shadow(0px 0px 20px rgba(140, 97, 255, 0.7));
+	}
+}
+.animate-bounce2 {
+	animation: bounce2 1s infinite;
+}

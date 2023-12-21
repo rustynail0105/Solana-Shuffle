@@ -1,0 +1,10 @@
+.offical-cover {
+  /* Standard mask-border syntax */
+  mask-border: url(./assets/offical-corver.svg);
+  /* Fallback for WebKit */
+  -webkit-mask-box-image: url(./assets/offical-corver.svg);
+}
+
+.flip-countdown-title {
+  font-weight: bold !important;
+}
